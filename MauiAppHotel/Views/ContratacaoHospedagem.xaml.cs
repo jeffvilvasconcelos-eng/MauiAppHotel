@@ -1,5 +1,4 @@
 using MauiAppHotel.Models;
-using Microsoft.Maui.Controls;
 
 namespace MauiAppHotel.Views;
 
@@ -29,8 +28,7 @@ public partial class ContratacaoHospedagem : ContentPage
 				QuartoSelecionado = (Quarto)pck_quarto.SelectedItem,
 				QntAdultos = Convert.ToInt32(stp_adultos.Value),
                 QntCriancas = Convert.ToInt32(stp_criancas.Value),
-                
-				DataCheckIn = dtpck_checkin.Date,
+                DataCheckIn = dtpck_checkin.Date,
 				DataCheckOut = dtpck_checkout.Date
 			};
 						

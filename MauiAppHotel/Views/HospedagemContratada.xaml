@@ -14,8 +14,8 @@
             FontSize="25"
             HorizontalTextAlignment="Center"/>
 
-        <Border Margin="10" Stroke="{x:Null}" BackgroundColor="{x:Null}">
-            <HorizontalStackLayout Orientation="Horizontal">
+        <Frame Margin="10">
+            <StackLayout  Orientation="Horizontal" >
                 <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
 
                     <Label Text="Adultos: " />
@@ -28,10 +28,10 @@
                     <Label Text="{Binding QntCriancas}"
                            TextColor="{StaticResource Primary}"/>
                 </HorizontalStackLayout>
-            </HorizontalStackLayout>
-        </Border>
+            </StackLayout>
+        </Frame>
 
-        <Border Margin="10" Stroke="{x:Null}" BackgroundColor="{x:Null}">
+        <Frame Margin="10">
             <Grid ColumnDefinitions="*, *, *"
                   RowDefinitions="Auto, Auto">
                 <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" />
@@ -50,15 +50,15 @@
                        Text="{Binding Estadia}" 
                        TextColor="{StaticResource Primary}"/>
             </Grid>
-        </Border>
+        </Frame>
 
-        <Border Margin="10" Stroke="{x:Null}" BackgroundColor="{x:Null}">
+        <Frame Margin="10">
             <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                 <Label Text="Total da Diária: " />
                 <Label Text="{Binding ValorTotal,StringFormat='{}{0:c}'}" 
                        TextColor="{StaticResource Primary}"/>
             </HorizontalStackLayout>
-        </Border>
+        </Frame>
 
         <Button Text="Voltar"
             HorizontalOptions="Center"

@@ -15,22 +15,22 @@
             HorizontalTextAlignment="Center"/>
 
         <Frame Margin="10">
-            <HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <HorizontalStackLayout>
-                        <Label Text="Adultos: " />
-                        <Label Text="{Binding QntAdultos}"
-                           TextColor="{StaticResource Primary}"/>
-                    </HorizontalStackLayout>
+            <StackLayout Orientation="Horizontal" >
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
 
-                    <HorizontalStackLayout>
-                        <Label Text="Crianças: " />
-                        <Label Text="{Binding QntCriancas}"
+                    <Label Text="Adultos: " />
+                    <Label Text="{Binding QntAdultos}"
                            TextColor="{StaticResource Primary}"/>
-                    </HorizontalStackLayout>
                 </HorizontalStackLayout>
 
-                <Frame Margin="10">
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Crianças: " />
+                    <Label Text="{Binding QntCriancas}"
+                           TextColor="{StaticResource Primary}"/>
+                </HorizontalStackLayout>
+            </StackLayout>
+
+            <Frame Margin="10">
                     <Grid ColumnDefinitions="*, *, *"
                       RowDefinitions="Auto, Auto">
                         <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" />
@@ -49,11 +49,11 @@
                                Text="{Binding Estadia}" 
                                TextColor="{StaticResource Primary}"/>
                     </Grid>
-                </Frame>
+            </Frame>
 
                 <Frame Margin="10">
-                    <HorizontalStackLayout>
-                        <Label Text="Total da Diária:R$ " />
+                    <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                        <Label Text="Total da Diária: " />
                         <Label Text="{Binding ValorTotal,StringFormat='{}{0:c}'}" 
                                TextColor="{StaticResource Primary}"/>
                     </HorizontalStackLayout>

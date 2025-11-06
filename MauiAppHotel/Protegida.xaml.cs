@@ -10,7 +10,7 @@ public partial class Protegida : ContentPage
 			Task.Run(async () =>
 			{ 
 				usuario_logado = await SecureStorage.Default.GetAsync("usuario_logado");
-				lbl_boasvindas.Text = $"Seja bem-vindo, {usuario_logado}!";
+				lbl_boasvindas.Text = $"Seja bem-vindo!";
             });
 }
 	private async void Button_Clicked(object sender, EventArgs e)

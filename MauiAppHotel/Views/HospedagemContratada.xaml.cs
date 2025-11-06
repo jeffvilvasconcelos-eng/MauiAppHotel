@@ -4,9 +4,15 @@ public partial class HospedagemContratada : ContentPage
 {
 	public HospedagemContratada()
 	{
-		InitializeComponent();
+        InitializeComponent();
 	}
-	private void Button_Clicked(object sender, EventArgs e)
+
+    private void InitializeComponent()
+    {
+        throw new NotImplementedException();
+    }
+
+    private void Button_Clicked(object sender, EventArgs e)
 	{
 		try
 		{

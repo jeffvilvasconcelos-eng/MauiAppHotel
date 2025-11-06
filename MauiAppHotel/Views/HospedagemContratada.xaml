@@ -14,8 +14,8 @@
             FontSize="25"
             HorizontalTextAlignment="Center"/>
 
-        <Frame Margin="10">
-            <StackLayout Orientation="Horizontal" >
+        <Border Margin="10" Stroke="{x:Null}" BackgroundColor="{x:Null}">
+            <HorizontalStackLayout Orientation="Horizontal">
                 <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
 
                     <Label Text="Adultos: " />
@@ -28,45 +28,41 @@
                     <Label Text="{Binding QntCriancas}"
                            TextColor="{StaticResource Primary}"/>
                 </HorizontalStackLayout>
-            </StackLayout>
-
-            <Frame Margin="10">
-                    <Grid ColumnDefinitions="*, *, *"
-                      RowDefinitions="Auto, Auto">
-                        <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" />
-                        <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" />
-                        <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" />
-
-                        <Label Grid.Row="1" Grid.Column="0" 
-                               Text="{Binding DataCheckIn, StringFormat='{}{0:dd/MM/yyyy}'}"
-                               TextColor="{StaticResource Primary}"/>
-                        
-                        <Label Grid.Row="1" Grid.Column="1" 
-                               Text="{Binding DataCheckOut, StringFormat='{}{0:dd/MM/yyyy}'}"
-                               TextColor="{StaticResource Primary}"/>
-                        
-                        <Label Grid.Row="1" Grid.Column="2" 
-                               Text="{Binding Estadia}" 
-                               TextColor="{StaticResource Primary}"/>
-                    </Grid>
-            </Frame>
-
-                <Frame Margin="10">
-                    <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
-                        <Label Text="Total da Diária: " />
-                        <Label Text="{Binding ValorTotal,StringFormat='{}{0:c}'}" 
-                               TextColor="{StaticResource Primary}"/>
-                    </HorizontalStackLayout>
-                </Frame>
-
-                <Button Text="Voltar"
-                    HorizontalOptions="Center"
-                    Clicked="Button_Clicked" />
             </HorizontalStackLayout>
-        </Frame>
+        </Border>
 
+        <Border Margin="10" Stroke="{x:Null}" BackgroundColor="{x:Null}">
+            <Grid ColumnDefinitions="*, *, *"
+                  RowDefinitions="Auto, Auto">
+                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" />
+                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" />
+                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" />
 
+                <Label Grid.Row="1" Grid.Column="0" 
+                       Text="{Binding DataCheckIn, StringFormat='{}{0:dd/MM/yyyy}'}"
+                       TextColor="{StaticResource Primary}"/>
+                
+                <Label Grid.Row="1" Grid.Column="1" 
+                       Text="{Binding DataCheckOut, StringFormat='{}{0:dd/MM/yyyy}'}"
+                       TextColor="{StaticResource Primary}"/>
+                
+                <Label Grid.Row="1" Grid.Column="2" 
+                       Text="{Binding Estadia}" 
+                       TextColor="{StaticResource Primary}"/>
+            </Grid>
+        </Border>
 
+        <Border Margin="10" Stroke="{x:Null}" BackgroundColor="{x:Null}">
+            <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                <Label Text="Total da Diária: " />
+                <Label Text="{Binding ValorTotal,StringFormat='{}{0:c}'}" 
+                       TextColor="{StaticResource Primary}"/>
+            </HorizontalStackLayout>
+        </Border>
+
+        <Button Text="Voltar"
+            HorizontalOptions="Center"
+            Clicked="Button_Clicked" />
 
     </VerticalStackLayout>
 </ContentPage>

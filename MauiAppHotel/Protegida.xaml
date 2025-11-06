@@ -11,7 +11,7 @@
             <VerticalStackLayout>
                 <Label 
             Text="Área Protegeida"
-                    FontSize="Lato"
+                    FontFamily="Lato"
                     HorizontalTextAlignment="Center" />
                 <Label x:Name="lbl_boasvindas"
                        HorizontalTextAlignment="Center" />

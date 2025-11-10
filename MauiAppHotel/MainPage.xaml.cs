@@ -19,6 +19,12 @@
                 CounterBtn.Text = $"Clicked {count} times";
 
             SemanticScreenReader.Announce(CounterBtn.Text);
+        
+       
         }
     }
 }
+
+    
+
+

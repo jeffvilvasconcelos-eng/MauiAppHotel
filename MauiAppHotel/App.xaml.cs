@@ -29,7 +29,7 @@ namespace MauiAppHotel
                 Descricao = "Quarto Simples",
                 ValorDiarioAdulto = 45.0,
                 ValorDiarioCrianca = 20.00
-            },
+            }
         };
         public App()
         {

@@ -23,7 +23,7 @@ public partial class ContratacaoHospedagem : ContentPage
 	{
 		try
 		{
-			Hospedagem h = new Hospedagem
+			Hospedagem h = new Hospedagem 
 			{
 				QuartoSelecionado = (Quarto)pck_quarto.SelectedItem,
 				QntAdultos = Convert.ToInt32(stp_adultos.Value),
@@ -52,5 +52,8 @@ private void dtpck_checkin_DateSelected(object sender, DateChangedEventArgs e)
 		dtpck_checkout.MinimumDate = date_selecionada_checkin.AddDays(1);
 		dtpck_checkout.MaximumDate = date_selecionada_checkin.AddMonths(6);
     }
-
+private async void BtnSobre_Clicked(object sender, EventArgs e)
+	{
+		await Navigation.PushAsync(new Sobre());
+	}
 }

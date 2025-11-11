@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Gray200}"
+             Title="Sobre o Desenvolvedor">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="10" Spacing="20">
+
+        <Label Text="Sobre o Desenvolvedor"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="{StaticResource Primary}"
+                   HorizontalOptions="Center" />
+
+        <Frame BackgroundColor="White" Padding="20" CornerRadius="12">
+            <VerticalStackLayout Spacing="20">
+
+                <Label Text="Nome: Jefferson Vilela."
+                           FontSize="18" TextColor="Black"/>
+                <Label Text=" Curso: Desenvolvedor de Sistemas."
+                            FontSize="18" TextColor="Black"/>
+                <Label Text=" Atividade: Agenda 13"
+                            FontSize="18" TextColor="Black"/>
+                <Label Text=" Data de Criação do App: 11/11/2025."
+                            FontSize="18" TextColor="Black"/>
+
+            </VerticalStackLayout>
+
+        </Frame>
+
+        <Button
+                Text="Voltar"
+                Clicked="BtnVoltar_Clicked"
+                BackgroundColor="{StaticResource Primary}"
+                TextColor="White"
+                WidthRequest="150"
+                HeightRequest="45"
+                CornerRadius="8"
+                HorizontalOptions="Center" />
+
+
+
+    </VerticalStackLayout>
+    
+</ContentPage>

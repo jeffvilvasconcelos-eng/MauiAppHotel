@@ -9,11 +9,17 @@ namespace MauiAppHotel.Views
         {
             InitializeComponent();
         }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            // Exemplo: Voltar para a página anterior
+        
+        private void Button_Clicked(object sender, EventArgs e )
+        {         
+            //Exemplo: Voltar para a página anterior
+            
             Navigation.PopAsync();
+        
+             /* private async void BtnSobre_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync(new Sobre());*/
         }
     }
+
 }
